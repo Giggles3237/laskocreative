@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lasko Creative | Chris Lasko</title>
+  <meta name="description" content="A tiny portfolio by Chris Lasko featuring Chipboard, Recipe App, Vehicle Describer, and Flirt of the Day." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>✨</text></svg>">
+  <meta property="og:title" content="Lasko Creative" />
+  <meta property="og:description" content="Quick links to projects by Chris Lasko: Chipboard, Recipe App, Vehicle Describer, Flirt of the Day." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg: #0b1220; --bg-soft: #0f1a2f; --card: #111a2e; --text: #e8eefc; --muted: #a8b3cf; --accent: #4f8cff; --accent-2: #7c5cff; --ring: rgba(79,140,255,0.5); --shadow: 0 10px 25px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f6f8fd; --bg-soft:#eef3ff; --card:#ffffff; --text:#0c1222; --muted:#50607d; --accent:#2858ff; --accent-2:#7537ff; --ring:rgba(40,88,255,.25); --shadow:0 10px 25px rgba(22,51,108,.08), inset 0 1px 0 rgba(255,255,255,.8); }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color:var(--text); background:radial-gradient(1200px 800px at 10% -10%, var(--bg-soft), transparent 50%), radial-gradient(1000px 700px at 110% -20%, var(--bg-soft), transparent 50%), var(--bg);}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{ text-decoration:underline }
+    .wrap{max-width:1100px; margin:0 auto; padding:28px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:42px; height:42px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:white; box-shadow:var(--shadow)}
+    .brand h1{font-size:1.15rem; margin:0}
+    .tag{color:var(--muted); font-size:.95rem}
+    .hero{padding:36px 0 8px}
+    .hero h2{font-size:clamp(1.6rem, 4vw, 2.2rem); margin:.1rem 0 .5rem}
+    .hero p{color:var(--muted); max-width:65ch; margin:0}
+    .grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:18px; margin:28px 0}
+    .card{grid-column:span 12; background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.02)), var(--card); border:1px solid rgba(127, 150, 199, .18); border-radius:20px; padding:20px; box-shadow:var(--shadow); position:relative; overflow:hidden}
+    .card h3{margin:0 0 .25rem; font-size:1.15rem}
+    .card p{margin:.3rem 0 1rem; color:var(--muted)}
+    .actions{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; background:var(--bg-soft); border:1px solid rgba(127,150,199,.25); color:var(--text); text-decoration:none; box-shadow:var(--shadow)}
+    .btn:hover{filter:brightness(1.05)}
+    .btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); border:0; color:white}
+    .pill{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; font-size:.8rem; background:rgba(127,150,199,.15); color:var(--muted); border:1px solid rgba(127,150,199,.25)}
+    .card .meta{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px}
+    @media (min-width:720px){ .card{grid-column:span 6} }
+    @media (min-width:1024px){ .card{grid-column:span 4} }
+    footer{margin:36px 0 12px; color:var(--muted); font-size:.92rem}
+    .contact{display:flex; flex-wrap:wrap; gap:10px; margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">LC</div>
+        <div>
+          <h1>Lasko Creative</h1>
+          <div class="tag">A few small builds by Chris Lasko</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>Projects</h2>
+      <p>Quick, no‑friction links to a few things I've shipped. Each card has a short description and a live demo link.</p>
+    </section>
+
+    <section class="grid" aria-label="Project grid">
+      <!-- Chipboard -->
+      <article class="card">
+        <div class="meta">
+          <span class="pill">Sales Dashboard</span>
+          <span class="pill">React · Node · MySQL</span>
+        </div>
+        <h3>Chipboard</h3>
+        <p>Real‑time sales tracker for our dealership: see pending/sold at a glance, coach faster, and reduce misses. Uses a chip‑style UI for quick status scanning.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://bopchips.netlify.app/" target="_blank" rel="noopener">Open Demo</a>
+        </div>
+      </article>
+
+      <!-- Recipe App -->
+      <article class="card">
+        <div class="meta">
+          <span class="pill">Recipes</span>
+          <span class="pill">CRUD · Sharing</span>
+        </div>
+        <h3>Recipe App</h3>
+        <p>Add, edit, and view recipes with ingredients and steps. Built to keep family favorites tidy and easy to share.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://recipeapp-26adf3f99a97.herokuapp.com" target="_blank" rel="noopener">Open App</a>
+        </div>
+      </article>
+
+      <!-- Vehicle Describer -->
+      <article class="card">
+        <div class="meta">
+          <span class="pill">Sales Tool</span>
+          <span class="pill">Content Helper</span>
+        </div>
+        <h3>Vehicle Describer</h3>
+        <p>A lightweight assistant that drafts clear, friendly vehicle descriptions, saving time while keeping tone on‑brand.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://minidescriber.netlify.app/" target="_blank" rel="noopener">Open Tool</a>
+        </div>
+      </article>
+
+      <!-- Flirt of the Day -->
+      <article class="card">
+        <div class="meta">
+          <span class="pill">Just for Fun</span>
+          <span class="pill">Daily Site</span>
+        </div>
+        <h3>Flirt of the Day</h3>
+        <p>A playful, single‑serving site: one flirtatious line per day, paired with a national day. Light, cheeky, and quick.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://flirtoftheday.com" target="_blank" rel="noopener">Visit Site</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Chris Lasko · Pittsburgh, PA</div>
+      <div class="contact">
+        <a href="mailto:chris.lasko@pandwbmw.com">chris.lasko@pandwbmw.com</a>
+        <span>·</span>
+        <a href="tel:+14126220449">412‑622‑0449</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
