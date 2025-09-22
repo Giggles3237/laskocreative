@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Flirt of the Day preview</title>
+  <desc id="desc">Playful hearts and speech bubble on a pink and purple gradient.</desc>
+  <defs>
+    <linearGradient id="flirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#ff7bd5" />
+      <stop offset="1" stop-color="#8c5bff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="28" fill="url(#flirtGradient)" />
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M240 108c-26 0-48 18-48 44 0 34 48 68 48 68s48-34 48-68c0-26-22-44-48-44zm0 62c-10 0-18-8-18-18s8-18 18-18 18 8 18 18-8 18-18 18z" />
+    <path d="M142 86c-16 0-30 12-30 28 0 22 30 44 30 44s30-22 30-44c0-16-14-28-30-28z" opacity="0.65" />
+    <path d="M338 86c-16 0-30 12-30 28 0 22 30 44 30 44s30-22 30-44c0-16-14-28-30-28z" opacity="0.65" />
+  </g>
+  <g fill="rgba(255,255,255,0.85)">
+    <rect x="160" y="212" width="160" height="22" rx="11" />
+    <rect x="176" y="244" width="128" height="18" rx="9" opacity="0.75" />
+  </g>
+</svg>
