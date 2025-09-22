@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Chipboard dashboard preview</title>
+  <desc id="desc">Abstract dashboard cards with charts on a blue gradient.</desc>
+  <defs>
+    <linearGradient id="chipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#4f8cff" />
+      <stop offset="1" stop-color="#7c5cff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="28" fill="url(#chipGradient)" />
+  <g fill="rgba(255,255,255,0.85)">
+    <rect x="36" y="52" width="160" height="92" rx="16" />
+    <rect x="214" y="52" width="230" height="52" rx="14" opacity="0.9" />
+    <rect x="214" y="118" width="230" height="26" rx="12" opacity="0.75" />
+    <rect x="36" y="162" width="408" height="110" rx="20" opacity="0.95" />
+  </g>
+  <polyline fill="none" stroke="#4f8cff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" points="60 220 132 188 188 210 256 176 320 202 388 170" opacity="0.85" />
+  <circle cx="132" cy="188" r="10" fill="#7c5cff" />
+  <circle cx="256" cy="176" r="10" fill="#7c5cff" />
+</svg>

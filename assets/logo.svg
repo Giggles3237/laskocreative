@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+  <title id="title">Lasko Creative logo</title>
+  <desc id="desc">Stylized LC monogram inside a gray square with Lasko Creative wordmark.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" stop-color="#d9dde2" />
+      <stop offset="1" stop-color="#c1c6cc" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="180" fill="#f5f6f7" rx="18" />
+  <rect x="0" y="0" width="180" height="180" fill="url(#grad)" />
+  <path fill="#ffffff" d="M62 44v92h80v-20H82V44z" />
+  <path fill="#ffffff" d="M156 44h-30c-33 0-60 27-60 60s27 60 60 60h30v-20h-30c-22 0-40-18-40-40s18-40 40-40h30z" />
+  <g fill="#111111" font-family="'Raleway', 'Helvetica Neue', Arial, sans-serif" font-weight="600">
+    <text x="220" y="86" font-size="72" letter-spacing="6">LASKO</text>
+    <text x="220" y="138" font-size="60" letter-spacing="12">CREATIVE</text>
+  </g>
+</svg>
