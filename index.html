@@ -620,6 +620,8 @@
       letter-spacing: .09em;
       text-transform: uppercase;
     }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; font-size: .82rem; }
+    .footer-links a { text-decoration: underline; text-underline-offset: 4px; }
 
     @media (max-width: 1060px) {
       :root { --page: min(100% - 40px, 900px); }
@@ -968,6 +970,10 @@
         <a class="button" href="mailto:chris.lasko@pandwbmw.com?subject=Project%20inquiry%20for%20Lasko%20Creative">Start a conversation</a>
         <div class="footer-note">Chris Lasko / Pittsburgh, PA / <span id="year"></span></div>
       </div>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
     </div>
   </footer>
 
