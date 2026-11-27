@@ -20,7 +20,7 @@ document.querySelectorAll('[data-vin-demo-video]').forEach(preview => {
     const id = new URL(preview.href).searchParams.get('v');
     const titles = {
       _RktT2vypCc: 'VinLocate: Find Where a Vehicle Was Last Scanned',
-      SohDGwpMelU: 'How VinLocate Works: Last Seen, Not Live GPS'
+      'r0S-nW-USjk': 'How VinLocate Works: Last Seen, Not Live GPS'
     };
     if (!Object.hasOwn(titles, id)) return;
     event.preventDefault();
