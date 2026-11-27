@@ -13,3 +13,24 @@ document.querySelector('[data-lot-demo-video]')?.addEventListener('click', event
   event.currentTarget.replaceWith(frame);
   frame.focus();
 });
+
+document.querySelectorAll('[data-vin-demo-video]').forEach(preview => {
+  preview.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const id = new URL(preview.href).searchParams.get('v');
+    const titles = {
+      _RktT2vypCc: 'VinLocate: Find Where a Vehicle Was Last Scanned',
+      SohDGwpMelU: 'How VinLocate Works: Last Seen, Not Live GPS'
+    };
+    if (!Object.hasOwn(titles, id)) return;
+    event.preventDefault();
+    const frame = document.createElement('iframe');
+    frame.title = titles[id];
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&playsinline=1';
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture';
+    frame.allowFullscreen = true;
+    preview.replaceWith(frame);
+    frame.focus();
+  });
+});
